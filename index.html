@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador Regressivo de Dias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div id="countdown">
-        <p id="countdown__text">Dias restantes: </p>
-        <p id="time-remaining"></p>
+<body class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+
+    <div class="card text-center" id="countdown" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <div class="card-body">
+            <p id="countdown__text" class="fs-3 text-primary">Tempo restante:</p>
+            <div id="time-remaining" class="fs-1"></div>
+        </div>
     </div>
 
     <script src="script.js"></script>

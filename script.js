@@ -20,7 +20,7 @@ function updateCountdown(futureDate) {
         (12 * (futureDate.getFullYear() - now.getFullYear()));
 
     document.getElementById('time-remaining').innerText =
-        `Time remaining: ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds, local time`;
+        `Tempo restante: ${days} dias, ${hours} horas, ${minutes} minutos, ${seconds} segundos`;
 }
 
 const futureDate = new Date('2024-09-11T08:45:00');

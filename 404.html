@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-    <title>Página não encontrada</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Página não encontrada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Erro 404</h1>
-    <p>A página que você está procurando não foi encontrada.</p>
+
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <h1 class="display-4 mb-4">Not Found</h1>
+                <p class="lead">A página que você procura não foi encontrada.</p>
+                <img src="assets/404.jpg" alt="Imagem de erro" class="img-fluid mb-4" style="max-width: 500px;">
+                <div class="d-flex justify-content-center"> <a
+                        href="https://www.freepik.com/free-vector/404-error-with-landscape-concept-illustration_20602785.htm#fromView=search&page=1&position=1&uuid=86d8f5cf-c590-4050-a3fb-390fda5a4254">Image
+                        by storyset on Freepik</a>
+                    <a href="/index.html" class="btn btn-primary ms-3">Voltar para a página inicial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
