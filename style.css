@@ -1,0 +1,172 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+    /* background-color: red; */
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#divConteudo1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0C1446;
+    margin-top: 4rem;
+}
+
+#divConteudo1_foto {
+    display: flex;
+    width: 100%;
+    /* background-color: pink; */
+}
+
+#divConteudo1_foto>img {
+    margin: 1rem;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#divConteudo1_paragrafo {
+    /* background-color: blue; */
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+#divConteudo1_TempoRestante>div>h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    color: whitesmoke;
+
+}
+
+#divConteudo2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #B22222;
+}
+
+#divConteudo2>div>h2 {
+    color: whitesmoke;
+    margin-top: 4rem;
+}
+
+#divConteudo2_QA {
+    background-color: #B22222;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+#divConteudo2_QA_Botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+
+}
+
+#divConteudo2_QA_Botoes>button {
+    margin: 1rem;
+    width: 15rem;
+    font-weight: bold;
+}
+
+#divConteudo2_QA_Img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+#divConteudo2_QA_Img>img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 10%;
+}
+
+#divConteudo3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #2E8B57;
+    padding-top: 3rem;
+}
+
+#divConteudo3>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+#divConteudo3>div>img {
+    border-radius: 10%;
+    padding: 1rem;
+}
+
+#divConteudo4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #E1C322;
+    padding-top: 3rem;
+}
+
+#divConteudo4>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+#divConteudo4>div>img {
+    border-radius: 10%;
+    padding: 1rem;
+}
+
+#divConteudo5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0C1446;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: whitesmoke;
+
+}
+#footer{
+    background-color: whitesmoke;
+}
+
+#footer>div>a:hover{
+    text-decoration: none;
+    background-color: purple;
+}
+
+body.fixed-nav-padding {
+    padding-top: 60px;
+    /* Ajuste conforme a altura da sua navbar */
+}
