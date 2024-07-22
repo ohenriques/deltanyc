@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt/br">
 
 <head>
     <meta charset="UTF-8">
@@ -27,8 +27,6 @@
                     <a class="nav-link" href="#divConteudo1">Tempo Restante</a>
                     <a class="nav-link" href="#divConteudo2">Curiosidade</a>
                     <a class="nav-link" href="#divConteudo3">Ponto de Parada</a>
-                    <a class="nav-link" href="#pontoDeParada"><i class="bi bi-list"></i></a>
-
                 </div>
             </div>
         </div>
@@ -44,10 +42,30 @@
             <p>Contagem regressiva para a cidade que nunca dorme!!!</p>
         </div>
         <div id="divConteudo1_TempoRestante">
-            <div>
-                <h1>Tempo Restante ⏳</h1>
+            <div class="card">
+                <h2>Tempo Restante</h2>
+            </div>
+            <div class="card">
+                D->
+                <span id="timeRemaining_days"></span>
+            </div>
+
+            <div class="card">
+                H->
+                <span id="timeRemaining_hours"></span>
+            </div>
+
+            <div class="card">
+                M->
+                <span id="timeRemaining_minutes"></span>
+            </div>
+
+            <div class="card">
+                S -> 
+                <span id="timeRemaining_seconds"></span>
             </div>
         </div>
+    </div>
     </div>
     <!-- Conteúdo 1 Fim -->
 
@@ -133,6 +151,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
