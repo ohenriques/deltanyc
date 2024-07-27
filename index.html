@@ -17,7 +17,7 @@
 
     <!-- Navbar Inicio-->
     <nav class="navbar fixed-top justify-content navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid justify-content-end">
+        <div class="container-fluid justify-content-end" id="divmenu">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,32 +39,38 @@
             <img src="assets/flag.png" alt="imagem bandeira">
         </div>
         <div id="divConteudo1_paragrafo">
-            <p>Contagem regressiva para a cidade que nunca dorme!!!</p>
+            <div>
+                <p>Contagem regressiva para a cidade que nunca dorme!!!</p>
+            </div>
+            <div id="divConteudo1_paragrafo_contador">
+                <div class="card">
+                    <h2>Tempo Restante</h2>
+                </div>
+                <div class="card" id="card_arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg>
+                </div>
+                <div class="card">
+                    <span id="timeRemaining_days"></span>
+                </div>
+
+                <div class="card">
+                    <span id="timeRemaining_hours"></span>
+                </div>
+
+                <div class="card">
+                    <span id="timeRemaining_minutes"></span>
+                </div>
+
+                <div class="card">
+                    <span id="timeRemaining_seconds"></span>
+                </div>
+            </div>
         </div>
-        <div id="divConteudo1_TempoRestante">
-            <div class="card">
-                <h2>Tempo Restante</h2>
-            </div>
-            <div class="card">
-                D->
-                <span id="timeRemaining_days"></span>
-            </div>
 
-            <div class="card">
-                H->
-                <span id="timeRemaining_hours"></span>
-            </div>
-
-            <div class="card">
-                M->
-                <span id="timeRemaining_minutes"></span>
-            </div>
-
-            <div class="card">
-                S -> 
-                <span id="timeRemaining_seconds"></span>
-            </div>
-        </div>
     </div>
     </div>
     <!-- Conteúdo 1 Fim -->
@@ -132,6 +138,8 @@
         <h1>Paulo, boa viagem!</h1>
     </div>
     <!-- Conteúdo 5 Fim -->
+    
+<button id="backToTopBtn" title="Voltar ao topo">⬆️</button>
 
 
     <!-- Footer -->

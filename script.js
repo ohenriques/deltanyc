@@ -59,3 +59,23 @@ window.addEventListener('scroll', function () {
         body.classList.remove('fixed-nav-padding'); // Remove o padding do body
     }
 });
+
+
+var backToTopBtn = document.getElementById("backToTopBtn");
+
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+backToTopBtn.addEventListener("click", function () {
+    document.body.scrollTop = 0; // Para Safari
+    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+});
